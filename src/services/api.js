@@ -1,7 +1,7 @@
 // src/services/api.js - આ file ને update કરો
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://govardhanbackend-1.onrender.com/api';
 
 export const api = axios.create({
     baseURL: API_BASE_URL,
