@@ -20,7 +20,7 @@ const Order = () => {
   const fetchOrders = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/orders?customerId=${user?._id}`
+        `https://govardhanbackend-1.onrender.com/api/orders?customerId=${user?._id}`
       );
       const data = await res.json();
       if (res.ok && data.success) {
