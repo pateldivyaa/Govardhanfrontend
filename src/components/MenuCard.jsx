@@ -17,7 +17,7 @@ const MenuCard = ({ item }) => {
         <img
           src={
             item.image
-              ? `http://localhost:5000${item.image}`
+              ? `https://govardhanbackend-1.onrender.com${item.image}`
               : "https://via.placeholder.com/150?text=No+Image"
           }
           alt={item.name}
