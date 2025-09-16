@@ -20,7 +20,7 @@ const OrdersPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/orders");
+        const res = await fetch("https://govardhanbackend-1.onrender.com/api/orders");
         const data = await res.json();
         if (res.ok && data.success) {
           setOrders(data.data);
