@@ -3,7 +3,7 @@ import React, { createContext, useContext, useReducer, useEffect, useState } fro
 const AppContext = createContext();
 
 // API Base URL
-export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://govardhanbackend-1.onrender.com/api';
 
 const initialState = {
   user: null,
