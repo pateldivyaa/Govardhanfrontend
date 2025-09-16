@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 
   // Fetch dashboard data
   useEffect(() => {
-    fetch("http://localhost:5000/api/dashboard")
+    fetch("https://govardhanbackend-1.onrender.com/api/dashboard")
       .then((res) => res.json())
       .then((data) => {
         setRecentOrders(data.recentOrders || []);
